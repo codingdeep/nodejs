@@ -1,0 +1,23 @@
+<%
+   renderError=function (name){
+       if(typeof errors != "undefined"){
+           if (errors[name] != undefined){
+               return errors[name]
+           }else {
+               return null
+           }
+       }else {
+           return null
+       }
+   }
+%>
+<%
+renderMsg=function (){
+    if(success_msg){
+        return success_msg
+    }
+    if(error_msg){
+        return error_msg
+    }
+   }
+%>
